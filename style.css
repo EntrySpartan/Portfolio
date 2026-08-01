@@ -168,10 +168,25 @@ section h2 {
 }
 /* =====Quotation Section ===== */
 #vision {
+  position: relative;
   display: block;
   text-align: center;
   padding: 30px 20px;
-  background: #e1dcc9;
+  overflow: hidden;
+}
+
+#vision::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/background 8.jpg") center/cover no-repeat;
+  opacity: 0.08; /* Adjust from 0.05 to 0.2 */
+  z-index: 0;
+}
+
+#vision > * {
+  position: relative;
+  z-index: 1;
 }
 .vision-intro {
   text-align: left;
@@ -184,13 +199,13 @@ section h2 {
   font-size: 50px;
   color: #38bdf8;
   font-weight: 700;
-  color: black;
+  color: #BFC9D1;
   font-family: "Dancing Script", cursive;
 }
 #vision p {
   max-width: 850px;
   margin: 0 auto;
-  color: #000000;
+  color: #BFC9D1;
   font-size: 18px;
   line-height: 1.8;
 }
