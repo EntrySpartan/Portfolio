@@ -400,9 +400,10 @@ footer {
   }
   /* Hero */
   #home {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     padding: 130px 25px 70px;
+    
   }
   .hero-text {
     align-items: center;
