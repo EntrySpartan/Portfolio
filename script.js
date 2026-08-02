@@ -65,6 +65,52 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
+});
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+  status.style.display = "flex";
+  status.querySelector("span").textContent = "Message sent successfully! Thank you for reaching out.";
+  form.reset();
+
+  setTimeout(() => {
+    status.style.display = "none";
+  }, 4000);
+
+} else {
+  status.style.display = "flex";
+  status.querySelector("span").textContent =
+    "Error! Please check inputs and try again.";
+
+  setTimeout(() => {
+    status.style.display = "none";
+  }, 4000);
+}
+
+} catch (error) {
+  status.style.display = "flex";
+  status.querySelector("span").textContent =
+    "Error! Please check your internet connection and try again.";
+
+  setTimeout(() => {
+    status.style.display = "none";
+  }, 4000);
+}
 });

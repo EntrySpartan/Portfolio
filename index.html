@@ -12,7 +12,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
@@ -121,7 +121,6 @@
       <h2 class="skillsheader">PROFESSIONAL SKILLS</h2>
 
       <div class="experience-wrapper">
-        
         <div class="experience-card">
           <i class="fa-brands fa-react skill-icon"></i>
           <h3>React.js</h3>
@@ -208,13 +207,35 @@
 
     <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact</h2>
+      <h2 class="contact-header">LET'S WORK TOGETHER</h2>
+      <p class="contact-subtext">
+        Have an opportunity or want to discuss a project? Feel free to send me a
+        message.
+      </p>
+      <form
+        class="contact-form"
+        id="contact-form"
+        action="https://formspree.io/f/mbdnnlqa"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
 
-      <p>Email: your-email@gmail.com</p>
+        <input type="email" name="email" placeholder="Your Email" required />
 
-      <p>LinkedIn: your-linkedin-profile</p>
+        <input type="text" name="subject" placeholder="Subject" required />
 
-      <p>GitHub: your-github-profile</p>
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="6"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+        <div id="form-status" class="form-status">
+          <i class="fa-solid fa-circle-check"></i>
+          <span></span>
+        </div>
+      </form>
     </section>
 
     <!-- Footer -->
