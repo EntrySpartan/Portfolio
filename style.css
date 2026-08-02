@@ -251,11 +251,15 @@ section h2 {
 #about {
   padding: 100px 10%;
   background: #000000;
+  font-family: "Times New Roman", sans-serif;
+  background: url("images/background 11.png") center/cover no-repeat;
+  opacity: 0.05; /* Adjust from 0.05 to 0.2 */
+  z-index: 0;
 }
 
 #about h2 {
   text-align: left;
-  color: #f8fafc;
+  color: #bfc9d1;
   font-size: 38px;
   margin-bottom: 50px;
   font-family: "Times New Roman", sans-serif;
@@ -265,6 +269,7 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Times New Roman", sans-serif;
   gap: 60px;
 }
 
@@ -278,7 +283,6 @@ section h2 {
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: justify;
-  font-family: "Inter", Arial, sans-serif;
 }
 
 .about-image {
