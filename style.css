@@ -55,15 +55,40 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
 }
+
 nav ul li a {
+  position: relative;
   color: #a1a1aa;
   font-size: 15px;
-  transition: 0.3s;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: 0.3s ease;
 }
+
+/* Hover color */
 nav ul li a:hover {
-  color: #38bdf8;
+  color: white;
+}
+
+/* Animated underline */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 /* Social Icons */
 .nav-socials {
@@ -252,14 +277,50 @@ section h2 {
   padding: 100px 10%;
   background: #000000;
   font-family: "Times New Roman", sans-serif;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: url("images/background 11.png") center/cover no-repeat;
-  opacity: 0.05; /* Adjust from 0.05 to 0.2 */
-  z-index: 0;
+  opacity: 0.05; /* adjust visibility here */
+  z-index: 1;
+}
+
+#about > * {
+  position: relative;
+  z-index: 1;
+}
+
+.name-intro {
+  font-size: 44px;
+  letter-spacing: -1px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "calibri", sans-serif;
+}
+
+.name-intro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100px;
+  height: 5px;
+  background: #9ca3af;
+  border-radius: 5px;
+}
+.big-i {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #9ca3af;
+  line-height: 0;
 }
 
 #about h2 {
-  text-align: left;
-  color: #bfc9d1;
+  text-align: center;
+  color: #9ca3af;
   font-size: 38px;
   margin-bottom: 50px;
   font-family: "Times New Roman", sans-serif;
@@ -293,69 +354,75 @@ section h2 {
 }
 
 .about-image img {
-  width: 500px;
-  height: 700px;
+   width: 400px;
+  height: 500px;
   object-fit: cover;
   border-radius: 20px;
 }
-
-/* ===== Skills Section ===== */
-#skills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-#skills h2 {
-  grid-column: 1 / -1;
-}
-#skills div {
-  background: #111111;
-  padding: 35px;
-  border-radius: 15px;
-  border: 1px solid #222;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-}
-#skills div:hover {
-  transform: translateY(-5px);
-  border-color: #38bdf8;
-}
-#skills h3 {
-  color: #38bdf8;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-#skills li {
-  color: #cbd5e1;
-  margin-bottom: 10px;
-}
 /* ===== Experience Section ===== */
-article {
-  background: #111111;
-  padding: 35px;
-  border-radius: 15px;
-  border: 1px solid #222;
-  margin-bottom: 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
+.skill-icon {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
 }
-article:hover {
-  transform: translateY(-5px);
-  border-color: #38bdf8;
+.experience-card:hover .skill-icon {
+  transform: scale(1.15);
 }
-article h3 {
-  color: #38bdf8;
-  font-size: 25px;
+.skills-section .experience-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.skills-section .experience-card {
+  width: 240px;
+  min-height: 220px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  
+}
+
+.skills-section .experience-card h3 {
   margin-bottom: 15px;
 }
-article p {
-  color: #cbd5e1;
-  margin-bottom: 15px;
+
+.skills-section .experience-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9ca3af;
+  
 }
-article li {
-  color: #d1d5db;
-  margin: 8px 0;
+.experience-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  border-color: white;
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
+}
+.skillsheader {
+  font-family: "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #9ca3af;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
 /* ===== Projects ===== */
 #projects article {
   text-align: center;
@@ -385,6 +452,36 @@ footer {
   text-align: center;
   padding: 25px;
   border-top: 1px solid #222;
+}
+
+/* ===== Animations ===== */
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background: #06202B;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+#backToTop:hover {
+  transform: translateY(-5px);
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
 }
 /* ===== Mobile Responsive ===== */
 @media (max-width: 900px) {
@@ -468,6 +565,23 @@ footer {
     font-size: 15px;
     line-height: 1.7;
   }
+  /* Experience & Skills Cards */
+  .experience-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .experience-card {
+    width: 90%;
+    max-width: 450px;
+  }
+
+  /* Skills Header */
+  .skillsheader {
+    font-size: 2.2rem;
+  }
+
 }
 @media (max-width: 480px) {
   .logo h2 {
@@ -500,4 +614,23 @@ footer {
   #vision p:last-child {
     font-size: 16px;
   }
+  .experience-wrapper {
+    flex-direction: column;
 }
+ .experience-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 20px;
+  }
+
+  .experience-card p {
+    font-size: 14px;
+  }
+
+  .skillsheader {
+    font-size: 1.8rem;
+  }
+  }

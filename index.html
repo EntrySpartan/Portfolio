@@ -12,6 +12,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
@@ -23,15 +24,14 @@
     <!-- Navigation -->
     <header>
       <nav>
-        <div class="logo">
-        
-        </div>
+        <div class="logo"></div>
 
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
         </ul>
         <div class="nav-socials">
           <a href="https://instagram.com/yourusername" target="_blank">
@@ -60,7 +60,7 @@
 
       <div class="hero-text">
         <p class="intro-text">Hello, I'm</p>
-        <p class="name-text">POLO </p>
+        <p class="name-text">POLO</p>
         <p class="intro-text">
           A passionate and dedicated individual with a strong background in
           management and a keen interest in technology. I thrive on challenges
@@ -85,37 +85,28 @@
     </section>
     <!-- About Section -->
     <section id="about">
-      <h2><b>A BIT OF ME...</b></h2>
+      <h2><b>A LITTLE BIT OF ME</b></h2>
 
       <div class="about-container">
         <div class="about-content">
+          <h1 class="name-intro">I'm POLO MARI DARREL ILLUT.</h1>
+          <br /><br /><br /><br />
           <p>
-            My name is Polo Mari Darrel Illut and I am an Information Technology graduate passionate about software
-            development, business process improvement, and creating technology
-            solutions that solve real-world problems.
+            <span class="big-i">I</span> am an Information Technology graduate
+            passionate about software development, business process improvement,
+            and creating technology solutions that solve real-world problems.
           </p>
 
           <p>
-            Throughout my academic journey, I gained experience in web
-            development, database management, system analysis, and developing
-            solutions through technology. I also completed projects involving
-            system design, process improvement, and innovative digital
-            solutions.
+            I have a strong foundation in web development, database management,
+            and system analysis through academic projects and continuous
+            learning. I am eager to apply my knowledge, develop new skills, and
+            contribute to innovative technology solutions.
           </p>
-
           <p>
-            Beyond technology, I have professional leadership experience as a
-            Shift Manager, where I developed skills in team management,
-            decision-making, problem-solving, and operational efficiency. This
-            experience taught me the importance of adaptability, accountability,
-            and continuous improvement.
-          </p>
-
-          <p>
-            I am continuously learning and seeking opportunities where I can
-            combine my technical skills, leadership mindset, and passion for
-            innovation to contribute meaningful solutions and grow as an IT
-            professional.
+            If you are looking for a motivated IT graduate ready to learn and
+            take on new challenges, I would be glad to connect and discuss
+            potential opportunities.
           </p>
         </div>
 
@@ -126,23 +117,81 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
-      <h2>Experience</h2>
+    <section id="skills" class="skills-section">
+      <h2 class="skillsheader">PROFESSIONAL SKILLS</h2>
 
-      <article>
-        <h3>Shift Manager</h3>
+      <div class="experience-wrapper">
+        
+        <div class="experience-card">
+          <i class="fa-brands fa-react skill-icon"></i>
+          <h3>React.js</h3>
+          <p>
+            Building responsive and interactive user interfaces using modern
+            frontend development concepts.
+          </p>
+        </div>
 
-        <p>Popeyes Louisiana Kitchen Philippines Inc.</p>
+        <div class="experience-card">
+          <i class="fa-brands fa-node-js skill-icon"></i>
+          <h3>Node.js & Express</h3>
+          <p>
+            Developing backend applications, APIs, and server-side
+            functionality.
+          </p>
+        </div>
 
-        <ul>
-          <li>Managed daily store operations</li>
-          <li>Supervised and trained employees</li>
-          <li>Prepared reports and monitored performance</li>
-          <li>Handled inventory and operational processes</li>
-        </ul>
-      </article>
+        <div class="experience-card">
+          <i class="fa-solid fa-database skill-icon"></i>
+          <h3>MySQL</h3>
+          <p>
+            Managing databases, creating queries, and handling structured data.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <i class="fa-solid fa-wind skill-icon"></i>
+          <h3>Tailwind CSS</h3>
+          <p>
+            Designing clean, responsive, and modern user interfaces efficiently.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <i class="fa-brands fa-github skill-icon"></i>
+          <h3>Git & GitHub</h3>
+          <p>
+            Using version control for managing code and collaborating on
+            projects.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <i class="fa-solid fa-lightbulb skill-icon"></i>
+          <h3>Problem Solving</h3>
+          <p>
+            Analyzing challenges and creating effective solutions through
+            technology.
+          </p>
+        </div>
+        <div class="experience-card">
+          <i class="fa-brands fa-js skill-icon"></i>
+          <h3>JavaScript</h3>
+          <p>
+            Developing interactive web features and improving frontend
+            functionality.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <i class="fa-brands fa-php skill-icon"></i>
+          <h3>PHP & Laravel</h3>
+          <p>
+            Building web applications and working with backend development
+            concepts.
+          </p>
+        </div>
+      </div>
     </section>
-
     <!-- Projects Section -->
     <section id="projects">
       <h2>Projects</h2>
@@ -172,7 +221,9 @@
     <footer>
       <p>© 2026 Polo Mari Darrel Illut</p>
     </footer>
-
+    <button id="backToTop" title="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <script src="script.js"></script>
   </body>
 </html>
