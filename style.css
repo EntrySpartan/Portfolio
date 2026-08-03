@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   line-height: 1.6;
   color: #e5e7eb;
   background: #050505;
@@ -92,8 +92,6 @@ nav ul li a:hover::after {
   position: relative;
   z-index: 999;
   margin-left: 20px;
-
-  
 }
 .nav-socials a {
   color: #cbd5e1;
@@ -103,7 +101,6 @@ nav ul li a:hover::after {
 .nav-socials a:hover {
   color: #38bdf8;
   transform: translateY(-3px);
-
 }
 .nav-socials i {
   pointer-events: none;
@@ -133,7 +130,8 @@ nav ul li a:hover::after {
   color: #9ca3af;
   font-size: 20px;
   margin-bottom: 5px;
-  font-family: "Times New Roman", sans-serif;
+   font-family: "Nanum Gothic", sans-serif;
+
 }
 .name-text {
   color: #ffffff;
@@ -141,7 +139,8 @@ nav ul li a:hover::after {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 15px;
-  font-family: "Times New Roman", sans-serif;
+   font-family: "Nanum Gothic", sans-serif;
+
 }
 .hero-text h2 {
   color: #38bdf8;
@@ -188,7 +187,7 @@ nav ul li a:hover::after {
   font-family: inherit;
   font-weight: 500;
   color: black;
-  background-color: #233D4D;
+  background-color: #233d4d;
   overflow: hidden;
   z-index: 1;
 }
@@ -196,7 +195,7 @@ nav ul li a:hover::after {
 .hero-buttons a:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  color: #EAECF0;
+  color: #eaecf0;
 }
 
 .hero-buttons a:active {
@@ -213,7 +212,7 @@ nav ul li a:hover::after {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #F4F2F2;
+  background-color: #f4f2f2;
   z-index: -1;
   transition: all 0.4s;
 }
@@ -280,7 +279,8 @@ section h2 {
 #about {
   padding: 100px 10%;
   background: #000000;
-  font-family: "Times New Roman", sans-serif;
+   font-family: "Nanum Gothic", sans-serif;
+
 }
 #about::before {
   content: "";
@@ -327,14 +327,16 @@ section h2 {
   color: #9ca3af;
   font-size: 38px;
   margin-bottom: 50px;
-  font-family: "Times New Roman", sans-serif;
+   font-family: "Nanum Gothic", sans-serif;
+
 }
 
 .about-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Times New Roman", sans-serif;
+   font-family: "Nanum Gothic", sans-serif;
+
   gap: 60px;
 }
 
@@ -358,7 +360,7 @@ section h2 {
 }
 
 .about-image img {
-   width: 400px;
+  width: 400px;
   height: 500px;
   object-fit: cover;
   border-radius: 20px;
@@ -393,7 +395,6 @@ section h2 {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
-  
 }
 
 .skills-section .experience-card h3 {
@@ -404,7 +405,6 @@ section h2 {
   font-size: 14px;
   line-height: 1.5;
   color: #9ca3af;
-  
 }
 .experience-card {
   transition: all 0.3s ease;
@@ -417,7 +417,7 @@ section h2 {
   box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
 }
 .skillsheader {
-  font-family: "Times New Roman", serif;
+  font-family: "Nanum Gothic", serif;
   font-size: 2.5rem;
   font-weight: 700;
   color: #9ca3af;
@@ -449,7 +449,7 @@ section h2 {
   align-items: center;
   justify-content: center;
 
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
 }
 
@@ -457,7 +457,7 @@ section h2 {
   font-size: 1.8rem;
 }
 .toolsheader {
-  font-family: "Times New Roman", serif;
+  font-family: "Nanum Gothic", serif;
   font-size: clamp(2rem, 5vw, 2.5rem);
   color: #9ca3af;
   margin-bottom: 40px;
@@ -489,7 +489,7 @@ section h2 {
 }
 
 .contact-header {
-  font-family: "Times New Roman", serif;
+  font-family: "Nanum Gothic", serif;
   font-size: clamp(2rem, 5vw, 2.5rem);
   color: #9ca3af;
   margin-bottom: 40px;
@@ -602,12 +602,11 @@ section h2 {
   margin-top: 20px;
   padding: 15px 25px;
   border-radius: 15px;
-  border: #fefefa  1px solid;
-  color: #fefefa ;
+  border: #fefefa 1px solid;
+  color: #fefefa;
   font-size: 15px;
   animation: slideDown 0.4s ease;
   letter-spacing: 1px;
-
 }
 
 .form-status i {
@@ -625,13 +624,87 @@ section h2 {
     transform: translateY(0);
   }
 }
-/* ===== Footer ===== */
+/* FOOTER */
+
 footer {
-  background: #000000;
+  background: #050505;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 60px 10% 20px;
+  color: #e5e7eb;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+footer h3 {
   color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.footer-about p {
+  color: #9ca3af;
+  line-height: 1.7;
+  max-width: 350px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #9ca3af;
+  transform: translateX(5px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #9ca3af;
+  font-size: 1.2rem;
+
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  background: rgba(96, 165, 250, 0.3);
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
   text-align: center;
-  padding: 25px;
-  border-top: 1px solid #222;
+  color: #9ca3af;
+  font-size: 0.9rem;
 }
 
 /* ===== Animations ===== */
@@ -643,12 +716,12 @@ footer {
   height: 55px;
   border: none;
   border-radius: 50%;
-  background: #06202B;
+  background: #06202b;
   color: white;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
   opacity: 0;
   visibility: hidden;
@@ -704,7 +777,6 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 130px 25px 70px;
-    
   }
   .hero-text {
     align-items: center;
@@ -781,7 +853,6 @@ footer {
   .skillsheader {
     font-size: 2.2rem;
   }
-
 }
 @media (max-width: 480px) {
   .logo h2 {
@@ -816,8 +887,8 @@ footer {
   }
   .experience-wrapper {
     flex-direction: column;
-}
- .experience-card {
+  }
+  .experience-card {
     width: 100%;
     padding: 20px;
   }
@@ -833,7 +904,7 @@ footer {
   .skillsheader {
     font-size: 1.8rem;
   }
-   #tools {
+  #tools {
     padding: 50px 4%;
   }
 
@@ -856,8 +927,7 @@ footer {
     font-size: 1.2rem;
   }
 }
-  @media (max-width: 768px) {
-
+@media (max-width: 768px) {
   #tools {
     padding: 60px 5%;
   }
